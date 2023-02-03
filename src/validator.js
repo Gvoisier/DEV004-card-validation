@@ -1,5 +1,6 @@
-//Aquí van todas las funciones que no son llamados del DOM (funciones puras)
+//Aquí van todas las funciones que son "funciones puras".
 //Key:value --> isvalid y maskify
+
 function validarPuestoPar(numero) {
     if (numero % 2 === 0) {
         return true;
@@ -16,6 +17,7 @@ const validator = {
     isValid: function (creditCardNumber) { //la función va a recibir un parámetro. En lugar de darle un nombre a la función, el método es una función
 
         let convertirArray = creditCardNumber.split("")
+
         // console.log(convertirArray);
         let invertirArray = convertirArray.reverse();
         // console.log(invertirArray);
@@ -58,18 +60,18 @@ const validator = {
 
     maskify: (numero) => { // => es un function mas actual - recibe el argumento que es el número
         const fourSaved = numero.slice(-4)
-        console.log(fourSaved)
+        console.log("estos son los fourSaved: " + fourSaved)
         let michi = ""
-        for (let i = 0; i < numero.lenght; i++) {
+        for (let i = 0; i < numero.length; i++) {
             michi = michi + "#"
         }
-        console.log(michi)
+        console.log("estos son los michis: " + michi)
 
         const forMichi = michi.slice(0, -4) //esta parte no entiendo
         let result = forMichi + fourSaved
         console.log(result)
 
-        return //retorno es la finalización.
+        return result; //retorno es la finalización.
     }
 } //retorno de la constante validate.
 
