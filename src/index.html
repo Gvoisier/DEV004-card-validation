@@ -2,17 +2,74 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <!--Logo de la página}-->
+  <img src="./img/hola.gif" alt="logo gato" width="50" height="50">
+
+  <!--enlace con hoja de CSS y js-->
+  <link rel="stylesheet" href="./style.css" />
   <script type="text/javascript" src="app.js"></script>
+  <meta charset="utf-8">
+
+  <!--Título de la página-->
+  <title>(= `ω´ =) "Tienda Nekoplay" (= `ω´ =)</title>
+
+  <!--Navegación con más información para el usuario-->
+  <nav>
+    <a href="">Inicio</a>
+    <a href="">Contacto</a>
+    <a href="">Quiénes somos</a>
+  </nav>
+
 </head>
 
 <body>
-  <input type="number" id="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required></input>
-  <!-- <button id="btnValidar">Validar</button> -->
-  <button id="btnValidar">Validar</button>
-  <div id="result"></div>
-  <script src="index.js" type="module"></script> <!--esto enlaza index java y modulos-->
+
+  <!--esto enlaza index java y modulos-->
+  <script src="index.js" type="module"></script>
+
+  <!--div Carrito de compras-->
+  <div>
+    <h1 id="Carrito de compras">Carrito de compras.</h1>
+  </div>
+
+  <!--div Productos-->
+
+  <div id="Productos">Productos</div>
+  <br>
+  <img src="./img/zelda.jpeg" alt="Zelda" width="150" height="150">
+  <br>
+  Producto 1: Juego Zelda
+  <br>
+  <img src="./img/baymax.jpg" alt="Baymax" width="150" height="150">
+  <br>
+  Producto 2: Peluche Baymax
+  <br>
+  <img src="./img/levi.jpg" alt="Levi" width="150" height="150">
+  <br>
+  Producto 3: Figurita Levi
+
+
+  <!--div Pagar-->
+
+  <div id="Pagar">Proceso de compra:
+    <br>
+    <h3>Producto 1: $14.000 CLP</h2>
+    <h3>Producto 2: $12.000 CLP</h2>
+    <h3>Producto 3: $15.000 CLP</h2>
+      <hr>
+      <h3>Total a pagar: $31.000 CLP</h3>
+      <hr>
+    <h2>Ingrese su número de tarjeta a continuación:</h3>
+    <input type="number" id="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required></input>
+    <br>
+    <br>
+    <button id="btnValidar">Pagar</button>
+    <br>
+    <div id="result"></div>
+    <br>
+    <img src="./img/tarjetas.jpg" alt="Logos de tarjetas" width="100" height="30">
+  </div>
+
 </body>
 
 </html>

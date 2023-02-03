@@ -60,11 +60,12 @@ const validator = {
         const fourSaved = numero.slice(-4)
         console.log(fourSaved)
         let michi = ""
-        for (let i = 0; i < numero.lenght; i++) { //revisar el ciclo for porque falta agregar i=?
+        for (let i = 0; i < numero.lenght; i++) {
             michi = michi + "#"
         }
         console.log(michi)
-        const forMichi = michi.slice(0, -4)
+
+        const forMichi = michi.slice(0, -4) //esta parte no entiendo
         let result = forMichi + fourSaved
         console.log(result)
 
