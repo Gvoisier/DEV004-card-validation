@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Logo de la página}-->
+
+  <!--enlace con hoja de CSS y js-->
+  <link rel="stylesheet" href="./style.css" />
+  <script type="module" src="index.js"></script>
+  <meta charset="utf-8">
+
+  <!--Título de la página-->
+  <title>Realizar pedido.</title>
+  <!--
+  <nav id="Contacto">
+    <a href="">Inicio</a>
+    <a href="">Contacto</a>
+    <a href="">Quiénes somos</a>
+  </nav>
+-->
+</head>
+
+<body>
+  <header>
+    <div id="imagenLogo">
+      <img src="./img/hola.gif" alt="logo gato" width="50" height="50">
+    </div>
+  </header>
+
+
+  <!--div Carrito de compras-->
+  <div id="Carrito">
+    <h1>Carrito de compras.</h1>
+  </div>
+
+  <!--div Productos-->
+
+  <div id="Productos">
+    <br><br>
+    <u> PRODUCTOS SELECCIONADOS: </u>
+    <br><br><br>
+    <img src="./img/zelda.jpeg" alt="Zelda" width="150" height="150">
+    <br>
+    <li>Producto 1: Juego Zelda</li>
+    <br>
+    <img src="./img/baymax.jpg" alt="Baymax" width="150" height="150">
+    <br>
+    <li>Producto 2: Peluche Baymax</li>
+    <br>
+    <img src="./img/levi.jpg" alt="Levi" width="150" height="150">
+    <br>
+    <li>Producto 3: Figurita Capitán Levi</li>
+    <br><br>
+  </div>
+
+  <!--div Pagar-->
+  <div id="Pagar">
+    <h2><u> PROCESO DE COMPRA: </u></h2>
+    <li>Producto 1: $14.000 CLP</li>
+    <li>Producto 2: $12.000 CLP</li>
+    <li>Producto 3: $15.000 CLP</li>
+    <hr>
+    <li>Total a pagar: $41.000 CLP</li>
+    <hr>
+    <li>Ingrese su número de tarjeta a continuación:</li>
+    <input type="text" id="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required>
+    <br><br>
+    <button id="btnValidar">Pagar</button>
+    <br><br>
+    <div id="result"></div>
+    <br>
+    <img src="./img/tarjetas.jpg" alt="Logos de tarjetas" width="100" height="30">
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
