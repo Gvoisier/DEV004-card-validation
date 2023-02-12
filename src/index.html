@@ -2,76 +2,85 @@
 <html>
 
 <head>
-  <!--Logo de la página}-->
-
-  <!--enlace con hoja de CSS y js-->
+  <!--enlace con hoja de CSS-->
   <link rel="stylesheet" href="./style.css" />
-  <script type="module" src="index.js"></script>
   <meta charset="utf-8">
 
   <!--Título de la página-->
   <title>Realizar pedido.</title>
-  <!--
-  <nav id="Contacto">
-    <a href="">Inicio</a>
-    <a href="">Contacto</a>
-    <a href="">Quiénes somos</a>
-  </nav>
--->
 </head>
 
 <body>
+  <!--Logo de la página Nekoplay-->
   <header>
     <div id="imagenLogo">
       <img src="./img/logo.png" alt="logo gato">
     </div>
   </header>
 
-
-  <!--div Carrito de compras-->
-  <div id="Carrito">
+  <!--Contenido principal-->
+  <main>
+    <!--div Carrito de compras-->
+    <div id="Carrito">
       <h1>CARRITO DE COMPRAS:</h1>
-  </div>
+    </div>
 
-  <!--div Productos-->
+    <!--div Productos-->
+    <div id="Productos">
+      <br><br>
+      <u>
+        <h2>PRODUCTOS SELECCIONADOS:</h2>
+      </u>
+      <br>
+      <div id="imagen">
+        <img src="./img/zelda.jpeg" alt="Zelda" width="200" height="250">
+      </div>
+      <br>
+      <h2>Producto 1: Juego Zelda:</h2>
+      <h3>Valor: $14.000 CLP </h3>
+      <br>
+      <div id="imagen">
+        <img src="./img/baymax.jpg" alt="Baymax" width="200" height="250">
+      </div>
+      <br>
+      <h2>Producto 2: Peluche Baymax</h2>
+      <h3>Valor: $12.000 CLP </h3>
+      <br>
+      <div id="imagen">
+        <img src="./img/levi.jpg" alt="Levi" width="200" height="200">
+      </div>
+      <br>
+      <h2>Producto 3: Figurita Capitán Levi</h2>
+      <h3>Valor: $15.000 CLP </h3>
+      <br><br>
+    </div>
 
-  <div id="Productos">
-    <br><br>
-    <u> PRODUCTOS SELECCIONADOS: </u>
-    <br><br><br>
-    <img src="./img/zelda.jpeg" alt="Zelda" width="150" height="150">
-    <br>
-    <li>Producto 1: Juego Zelda</li>
-    <br>
-    <img src="./img/baymax.jpg" alt="Baymax" width="150" height="150">
-    <br>
-    <li>Producto 2: Peluche Baymax</li>
-    <br>
-    <img src="./img/levi.jpg" alt="Levi" width="150" height="150">
-    <br>
-    <li>Producto 3: Figurita Capitán Levi</li>
-    <br><br>
-  </div>
+    <!--div Pagar-->
+    <div id="Pagar">
+      <h2><u> PROCESO DE COMPRA: </u></h2>
+      <li>Producto 1: $14.000 CLP</li>
+      <li>Producto 2: $12.000 CLP</li>
+      <li>Producto 3: $15.000 CLP</li>
+      <hr>
+      <li>Total a pagar: $41.000 CLP</li>
+      <hr>
+      <li>Ingrese su número de tarjeta a continuación:</li>
+      <input type="text" id="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required>
+      <br><br>
+      <button id="btnValidar">Pagar</button>
+      <br><br>
+      <div id="result"></div>
+      <br>
+      <img src="./img/tarjetas.jpg" alt="Logos de tarjetas" width="100" height="30">
+    </div>
+  </main>
 
-  <!--div Pagar-->
-  <div id="Pagar">
-    <h2><u> PROCESO DE COMPRA: </u></h2>
-    <li>Producto 1: $14.000 CLP</li>
-    <li>Producto 2: $12.000 CLP</li>
-    <li>Producto 3: $15.000 CLP</li>
-    <hr>
-    <li>Total a pagar: $41.000 CLP</li>
-    <hr>
-    <li>Ingrese su número de tarjeta a continuación:</li>
-    <input type="text" id="cardnumber" maxlength="16" placeholder="0000 0000 0000 0000" required>
-    <br><br>
-    <button id="btnValidar">Pagar</button>
-    <br><br>
-    <div id="result"></div>
-    <br>
-    <img src="./img/tarjetas.jpg" alt="Logos de tarjetas" width="100" height="30">
-  </div>
+  <!--Pie de página-->
+  <footer id="footer">
+    <h3>En cuanto se realice el pago, prepararemos tu pedido para el envío. Muchas gracias por tu preferencia.</h3>
+  </footer>
 
+  <!--Enlace con JS padre-->
   <script src="index.js" type="module"></script>
 </body>
 
