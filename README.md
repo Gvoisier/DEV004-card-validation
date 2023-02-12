@@ -1,5 +1,9 @@
 
-Nekoplay esta desarrollado para ofrecer artículos de videojuegos, figuras de animé, peluches y productos tecnológicos para todo tipo de usuarios, sin discriminación de edad, que gusten del animé, series, películas y videojuegos.
+Título: Nekoplay, tienda de videojuegos y más.
+
+Para acceder a la aplicación debe dirigirse a: https://gvoisier.github.io/DEV004-card-validation/src/
+
+Esta desarrollado para ofrecer artículos de videojuegos, figuras de animé, peluches y productos tecnológicos para todo tipo de usuarios, sin discriminación de edad, que gusten del animé, series, películas y videojuegos.
 
 Es una empresa que brinda calidad y variedad de productos de entretención, con un catálogo actualizado a las tendencias de internet y televisión.
 
@@ -13,7 +17,11 @@ Interfaz de usuario (UI) permitir al usuario:
 
 
 Esta página web está desarrollada con HTML, CSS y JavaScript.
-En el desarrollo de este código se utilizan variadas funciones, tenemos principalemente: 
+
+El prototipo de baja calidad fue diseñado en Procreate a mano alzada y se encuentra en Trello (https://trello.com/invite/b/NGOUJwG3/ATTIcb04c75bae390b03029309ccfce3ac3e3DEF8B5D/1-proyecto-creditcard )
+Este diseño fue una guía para iniciar el diseño, pero no fue la arquitectura final.
+
+En el desarrollo de este código se utilizan variadas funciones, tenemos principalmente: 
 - "isValid" para validar el numero de tarjeta de crédito que ingresará el cliente, la cual se valida aplicando el algoritmo de Luhn. 
 - Y la función "Maskify", para enmascarar los dígitos de la tarjeta de crédito o débito y así proteger los datos de nuestros clientes.
 
