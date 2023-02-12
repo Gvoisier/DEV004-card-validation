@@ -37,12 +37,12 @@ div#Pagar{
  }
  
  footer {
+    font-size: 10px;
     position: fixed;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
     bottom: 0;
     width: 100%;
     height: 40px;
     color: white;
   }
+
+  #new-font-size { font-size: 25px; }
